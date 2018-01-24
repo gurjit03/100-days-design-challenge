@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../general.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Daily UI Challenge 1</title>
+
+  <style>
+    .large-font {
+      font-size: 24px;
+    }
+
+    .challenge1-theme {
+      background-color: #2F5088;
+    }
+
+    .challenge1-theme-text {
+      color: #2F5088;
+    }
+
+    .challenge1-border {
+      border: 1px solid #2F5088;
+      border-radius: 5px;
+    }
+
+    .challenge1-area {
+      width: 400px;
+      margin: 8px auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .challenge1-cover {
+      background-image: url('../assets/challenge1-form.jpg');
+      background-position: 50% 50%;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+    }
+
+
+    .form-group {
+      text-align: center;
+      margin: 8px 0;
+    }
+
+    .form-group-element {
+      border: none;
+      width: 70%;
+      margin-left: auto;
+      font-family: 'Open Sans';
+      font-size: 16px;
+    }
+
+    .form-group-inner-wrapper {
+      background-color: white;
+      border-radius: 50px;
+      font-size: 24px;
+      width: 60%;
+      margin: 5px auto;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      padding-left: 15px;
+    }
+
+    .submit-button {
+      font-family: 'Lobster Two',cursive;
+    }
+
+    .submit-btn-wrapper {
+      display: block;
+      text-align: center;
+      background-color: rgba(231,31,33,0.9);
+      background: linear-gradient(to right, yellow , orange);
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 1s linear;
+    }
+
+    .submit-btn-wrapper:hover {
+      background: linear-gradient(to left, yellow , orange);
+    }
+
+    .main-font {
+      font-family: 'Lobster Two',cursive;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="challenge1-theme">
+    <div class="logo">
+      <span class="logo-hash">#</span>
+      <span class="logo-text">Daily Ui</span>
+    </div>
+    <h1 class="header-text">
+      Daily Ui Design Challenges
+    </h1>
+  </header>
+
+  <main class="main-page">
+    <h2 class="main-heading-text challenge1-theme-text">
+      <span class="challenge-number">1) </span>Sign Up Challenge
+    </h2>
+
+    <!-- Challenge Area-->
+    <div class="challenge challenge1-area challenge1-theme challenge1-border">
+      <div class="challenge1-cover">
+
+      </div>
+      <form action="#" method="POST">
+
+        <div class="form-group">
+          <div class="form-group-inner-wrapper">
+            <i class="fa fa-user-circle challenge1-theme-text large-font" aria-hidden="true"></i>
+            <input type="text" class="form-group-element challenge1-theme-text" placeholder="username">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group-inner-wrapper">
+            <i class="fa fa-lock challenge1-theme-text large-font" aria-hidden="true"></i>
+            <input type="password" class="form-group-element challenge1-theme-text" placeholder="**********">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group-inner-wrapper">
+            <i class="fa fa-envelope challenge1-theme-text large-font" aria-hidden="true"></i>
+            <input type="email" class="form-group-element challenge1-theme-text" placeholder="abc@abc.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group-inner-wrapper submit-btn-wrapper">
+            <span class="submit-button challenge1-theme-text">Submit</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer challenge1-theme">
+    <div class="footer-text">
+      <p class="footer-text--content">&copy; copyright made with <i class="fa fa-heart heart"></i></p>
+      <p class="footer-text--content">by</by>
+      <p class="footer-text--content main-font site-footer--owner-name">Gurjit Singh</p>
+    </div>
+  </footer>
+</body>
+</html>

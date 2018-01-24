@@ -8,6 +8,8 @@ html,
 body {
   width: 100%;
   height: 100%;
+
+  overflow-x: hidden;
 }
 
 html,
@@ -79,9 +81,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   padding: 0 8px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .logo {
@@ -104,7 +106,7 @@ header {
 }
 
 .logo-text {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.95);
 }
 
 .logo:hover > .logo-hash {
@@ -123,10 +125,78 @@ header {
 /*
   MAIN STYLES...
 */
+main {
+  margin-bottom: 32px;
+}
+
+.main-heading-text {
+  font-size: 22px;
+}
+
+/*
+  FOOTER STYLES
+*/
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+}
+
+.site-footer--owner-name {
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.site-footer--owner-name:hover {
+  color: orange;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text--content {
+  margin-bottom: 4px;
+}
+
+.heart {
+  color: rgba(238, 10, 12, 0.9);
+}
 
 /*
   CHALLENGE STYLES..
 */
 .challenge-number {
   font-family: 'Boogaloo', cursive;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    position: static;
+    margin-bottom: 8px;
+  }
+
+  main,
+  .challenge1-area {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-heading-text {
+    text-align: center;
+  }
 }

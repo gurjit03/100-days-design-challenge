@@ -9,6 +9,7 @@ export default StyleSheet.create({
     "html": {
         "width": "100%",
         "height": "100%",
+        "overflowX": "hidden",
         "marginTop": 0,
         "marginRight": 0,
         "marginBottom": 0,
@@ -22,6 +23,7 @@ export default StyleSheet.create({
     "body": {
         "width": "100%",
         "height": "100%",
+        "overflowX": "hidden",
         "marginTop": 0,
         "marginRight": 0,
         "marginBottom": 0,
@@ -148,7 +150,7 @@ export default StyleSheet.create({
     "main": {
         "marginTop": 0,
         "marginRight": 0,
-        "marginBottom": 0,
+        "marginBottom": 32,
         "marginLeft": 0,
         "paddingTop": 0,
         "paddingRight": 0,
@@ -159,7 +161,7 @@ export default StyleSheet.create({
     "header": {
         "marginTop": 0,
         "marginRight": 0,
-        "marginBottom": 16,
+        "marginBottom": 8,
         "marginLeft": 0,
         "paddingTop": 0,
         "paddingRight": 8,
@@ -172,7 +174,7 @@ export default StyleSheet.create({
         "minHeight": 50,
         "alignItems": "center",
         "justifyContent": "center",
-        "color": "rgba(255, 255, 255, 0.9)"
+        "color": "rgba(255, 255, 255, 0.95)"
     },
     "footer": {
         "marginTop": 0,
@@ -252,7 +254,7 @@ export default StyleSheet.create({
         "transition": "transform 0.25s linear"
     },
     "logo-text": {
-        "borderBottom": "1px solid rgba(255, 255, 255, 0.9)"
+        "borderBottom": "1px solid rgba(255, 255, 255, 0.95)"
     },
     "logo:hover > logo-hash": {
         "transform": "rotate(90deg)"
@@ -263,6 +265,39 @@ export default StyleSheet.create({
     "header-text": {
         "display": "inline-block",
         "fontSize": 24
+    },
+    "main-heading-text": {
+        "fontSize": 22
+    },
+    "site-footer": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "paddingTop": 10,
+        "paddingRight": 10,
+        "paddingBottom": 10,
+        "paddingLeft": 10
+    },
+    "site-footer--owner-name": {
+        "transition": "all 0.5s ease-in",
+        "cursor": "pointer"
+    },
+    "site-footer--owner-name:hover": {
+        "color": "orange"
+    },
+    "footer-text": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center"
+    },
+    "footer-text--content": {
+        "marginBottom": 4
+    },
+    "heart": {
+        "color": "rgba(238, 10, 12, 0.9)"
     },
     "challenge-number": {
         "fontFamily": "'Boogaloo', cursive"
